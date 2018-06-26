@@ -1,0 +1,26 @@
+.container {
+    max-width: 120rem;
+    min-height: 50rem;
+    margin: 8rem auto;
+    background-color: #fff;
+    box-shadow: var(--shadow-dark);
+}
+
+.header {
+    height: 7rem;
+    border-bottom: 1px solid var(--grey-light-2);
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    background-color: var(--sea);
+    flex: 0 0 18%;
+}
+
+.guesthouse-view {
+    background-color: var(--sun);
+    flex: 1;
+}

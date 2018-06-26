@@ -1,0 +1,37 @@
+:root {
+    --yriel: #ffdd59;
+    --sun: #ff9c00;
+    --sea: #01cafe;
+    --sand: #f9ecdc;
+
+    --grey-light: #e4e4e4;
+
+    --color-text-primary: #4a4a4a;
+
+    --gradient-primary: linear-gradient(to right bottom, var(--yriel), var(--sun));
+} 
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background-image: var(--gradient-primary);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-text-primary);
+    font-size: 1.8rem;
+    min-height: 100vw;
+}

@@ -15,8 +15,19 @@
     </head>
     <body>
         <div class="container">
+
             <header class="header">
-                Header part
+                <img srcset="img/logo.png 1x, img/logo@x2.png 2x" src="img/logo@x2.png" alt="Bursztyn Apartamenty Logo" class="logo">
+
+                <form action="#" class="search">
+                    <svg class="search__icon">
+                            <use href="img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                    <input type="text" class="search__input" placeholder="Szukaj pokoi">
+                    <button class="search__button">
+
+                    </button>
+                </form>
             </header>
 
             <div class="content">
@@ -28,5 +39,7 @@
                 </main>
             </div>
         </div>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
     </body>
 </html>

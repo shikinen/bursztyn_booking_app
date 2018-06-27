@@ -4,9 +4,14 @@
     --sea: #01cafe;
     --sand: #f9ecdc;
 
+    --primary-color: #f2709c;
+    --secondary-color: #ff9472;
+
     --grey-light-1: #faf9f9;
     --grey-light-2: #f4f2f2;
     --grey-light-3: #e4e4e4;
+
+    --grey-dark-3: #999;
 
     --color-text-primary: #4a4a4a;
 
@@ -29,13 +34,13 @@ html {
 }
 
 body {
-    background-image: var(--gradient-primary);
+    /*background-image: var(--gradient-primary); */
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Poppins, sans-serif;
     font-weight: 400;
     line-height: 1.6;
     color: var(--color-text-primary);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     min-height: 100vw;
 }

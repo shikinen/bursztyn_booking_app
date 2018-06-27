@@ -3,12 +3,16 @@
     min-height: 50rem;
     margin: 8rem auto;
     background-color: #fff;
-    box-shadow: var(--shadow-dark);
+    box-shadow: 0 1.5rem 6rem rgba(#f2709c, .2);
 }
 
 .header {
     height: 7rem;
     border-bottom: 1px solid var(--grey-light-2);
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .content {
@@ -16,11 +20,11 @@
 }
 
 .sidebar {
-    background-color: var(--sea);
+    background-color: var(--primary-color);
     flex: 0 0 18%;
 }
 
 .guesthouse-view {
-    background-color: var(--sun);
+    background-color: var(--secondary-color);
     flex: 1;
 }

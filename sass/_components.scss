@@ -61,7 +61,6 @@
 
 /////////////////////////////////
 //USER NAVIGATION
-
 .user-nav {
     align-self: stretch;
     display: flex;
@@ -121,4 +120,32 @@
     &__user-name {
 
     }
+}
+
+
+/////////////////////////////////
+//SIDE NAVIGATION
+.side-nav {
+    &__item {
+
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__icon {
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+
+}
+
+/////////////////////////////////
+//SIDE NAVIGATION
+.legal {
+    font-size: 1.2rem;
+    color: var(--grey-light-2);
+    text-align: center;
+    padding: 2.5rem;
 }

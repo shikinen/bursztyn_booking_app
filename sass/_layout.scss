@@ -20,11 +20,19 @@
 }
 
 .sidebar {
-    background-color: var(--primary-color);
+    border-right: 1px solid var(--grey-light-2);
     flex: 0 0 18%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .guesthouse-view {
-    background-color: var(--secondary-color);
     flex: 1;
+    height: 80rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

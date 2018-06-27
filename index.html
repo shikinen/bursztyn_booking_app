@@ -20,14 +20,32 @@
                 <img srcset="img/logo.png 1x, img/logo@x2.png 2x" src="img/logo@x2.png" alt="Bursztyn Apartamenty Logo" class="logo">
 
                 <form action="#" class="search">
-                    <svg class="search__icon">
-                            <use href="img/sprite.svg#icon-magnifying-glass"></use>
-                    </svg>
+
                     <input type="text" class="search__input" placeholder="Szukaj pokoi">
                     <button class="search__button">
-
+                        <svg class="search__icon">
+                            <use href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
                     </button>
                 </form>
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use href="img/sprite.svg#icon-heart"></use>
+                        </svg>
+                        <span class="user-nav__notification">7</span>
+                    </div>
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use href="img/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-nav__notification">14</span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img class="user-nav__user-photo" srcset="img/user.jpg 1x, img/user@x2.jpg 2x" src="img/user.jpg" alt="User photo">
+                        <span>Rafał</span>
+                    </div>
+                </nav>
             </header>
 
             <div class="content">

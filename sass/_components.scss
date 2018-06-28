@@ -200,7 +200,7 @@
 //LEGAL TEXT
 .legal {
     font-size: 1.2rem;
-    color: var(--grey-light-3);
+    color: var(--color-text-light);
     text-align: center;
     padding: 2.5rem;
 }
@@ -290,30 +290,41 @@
     font-size: inherit;
     cursor: pointer;
     transition: all .2s;
+
+    span {
+        margin-left: 3px;
+        transition: margin-left .2s;
+    }
     
     &:hover {
         color: var(--grey-dark-3);
+
+        span {
+            margin-left: 8px;
+        }
     }
 
     &:focus {
         outline: none;
         animation: pulsate 1s infinite;
     }
+
+
 }
 
 @keyframes pulsate {
     0% {
-        transform: scale(1);
+        transform: scale(1) perspective(1px);
         box-shadow: none;
     }
 
     50% {
-        transform: scale(1.05);
+        transform: scale(1.05) perspective(1px);
         box-shadow: 0 1rem 4rem rgba(0, 0, 0, .25);
     }
 
     100% {
-        transform: scale(1);
+        transform: scale(1) perspective(1px);
         box-shadow: none;
     }
 }
@@ -361,7 +372,6 @@
 
 /////////////////////////////////
 //RECOMMEND
-
 .recommend {
     font-size: 1.3rem;
 
@@ -385,3 +395,136 @@
         }
     }
 }
+
+/////////////////////////////////
+//REVIEW
+.review {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    margin-bottom: 3.5rem;
+
+    position: relative;
+    overflow: hidden;
+
+    &__text {
+        z-index: 10;
+        position: relative;
+    }
+
+    &__user {
+        margin-top: 2.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__photo {
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+    }
+
+    &__user-box {
+        margin-left: 1.5rem;
+    }
+    
+    &__user-name {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    &__user-date {
+        color: var(--color-text-light);
+        font-size: 1.2rem;
+    }
+
+    &__rating {
+        color: var(--primary-color);
+        font-size: 2rem;
+        font-weight: 300;
+        margin-left: auto;
+    }
+
+    &::before {
+        content:'\201C';
+        position: absolute;
+        top: -1.5rem;
+        left: -1rem;
+        font-size: 20rem;
+        font-family: sans-serif;
+        line-height: 1;
+        color: var(--grey-light-2);
+        z-index: 1;
+    }
+}
+
+/////////////////////////////////
+//CALL TO ACTION - CTA
+.cta {
+    padding: 3.5rem 0;
+    text-align: center;
+
+    &__book-now {
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin-bottom: 2.5rem;
+    }
+}
+
+/////////////////////////////////
+//BUTTON
+
+.button {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 10rem;
+    border: none;
+    background-image: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+    cursor: pointer;
+
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+
+    position: relative;
+    overflow: hidden;
+
+    >* {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        transition: all .2s;
+    }
+
+    &__visible {
+        padding: 2rem 7.5rem;
+    }
+
+    &__invisible {
+        position: absolute;
+        padding: 2rem 0;
+        left: 0;
+        top: -100%;
+    }
+
+    &:hover {
+        background-image: linear-gradient(to left, var(--secondary-color), var(--primary-color));
+    }
+
+    &:hover &__visible {
+        transform: translateY(100%);
+    }
+
+    &:hover &__invisible {
+        top: 0;
+    }
+
+    &:focus {
+        outline: none;
+        animation: pulsate 1s infinite;
+    }
+}
+

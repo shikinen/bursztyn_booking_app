@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
-        <title>Bursztyn &mdash; Twoje miejsce nad Bałtykiem</title>
+        <title>Bursztyn &mdash; Your Baltic Sea Gateaway</title>
     </head>
     <body>
         <div class="container">
@@ -20,7 +20,7 @@
                 <img srcset="img/logo.png 1x, img/logo@x2.png 2x" src="img/logo@x2.png" alt="Bursztyn Apartamenty Logo" class="logo">
 
                 <form action="#" class="search">
-                    <input type="text" class="search__input" placeholder="Szukaj pokoju">
+                    <input type="text" class="search__input" placeholder="Find room">
                     <button class="search__button">
                         <svg class="search__icon">
                             <use href="img/sprite.svg#icon-magnifying-glass"></use>
@@ -167,8 +167,47 @@
                         </div>
 
                         <div class="user-reviews">
-                            User reviews
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam, itaque officia
+                                    ex.
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="img/user-1.jpg" alt="User photo" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Tomasz Kwiatkowski</p>
+                                        <p class="review__user-date">August 23rd, 2017</p>
+                                    </div>
+                                    <div class="review__rating">8.1</div>
+                                </figcaption>
+                            </figure>
+
+                            <figure class="review">
+                                <blockquote class="review__text">
+                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
+                                </blockquote>
+                                <figcaption class="review__user">
+                                    <img src="img/user-2.jpg" alt="User photo" class="review__photo">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Anna Nowak</p>
+                                        <p class="review__user-date">April 10th, 2018</p>
+                                    </div>
+                                    <div class="review__rating">9.3</div>
+                                </figcaption>
+                            </figure>
+
+                            <button class="button-inline">Show all <span>&rarr;</span></button>
                         </div>
+                    </div>
+
+                    <div class="cta">
+                        <h2 class="cta__book-now">
+                            Good news! We have 2 free rooms for your selected dates!
+                        </h2>
+                        <button class="button">
+                            <span class="button__visible">Book now</span>
+                            <span class="button__invisible">Only 2 rooms left</span>
+                        </button>
                     </div>
                 </main>
             </div>
